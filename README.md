@@ -1,17 +1,88 @@
 # Potato Leaf Disease Detection
 
-A deep learning based web application that detects potato leaf diseases from uploaded images.
+A Machine Learning and Deep Learning based application for detecting potato leaf diseases from images.
 
-Technologies Used:
-- Python
-- TensorFlow
-- Keras
-- Streamlit
-- NumPy
-- Pillow
+## Features
 
-Features:
-- Upload potato leaf image
-- Detect Early Blight, Late Blight, or Healthy leaves
-- Display confidence score
-- Show disease information and prevention measures
+* Upload potato leaf images
+* Detect Early Blight, Late Blight, and Healthy leaves
+* Display prediction confidence
+* Simple web interface using Streamlit
+
+## Technologies Used
+
+* Python
+* TensorFlow
+* Keras
+* NumPy
+* Streamlit
+* Pillow
+
+## Dataset
+
+PlantVillage Potato Leaf Disease Dataset
+
+Classes:
+
+* Potato Early Blight
+* Potato Late Blight
+* Potato Healthy
+
+## Project Structure
+
+```text
+PotatoLeafDiseaseDetection
+│
+├── dataset
+├── model
+├── app.py
+├── train.py
+├── potato_model.h5
+├── requirements.txt
+├── runtime.txt
+└── README.md
+```
+
+## Installation
+
+1. Clone the repository
+
+```bash
+git clone https://github.com/Deepuunani/PotatoLeafDiseaseDetection.git
+```
+
+2. Navigate to the project folder
+
+```bash
+cd PotatoLeafDiseaseDetection
+```
+
+3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Run the Application
+
+```bash
+streamlit run app.py
+```
+
+## Model Training
+
+To train the model again:
+
+```bash
+python train.py
+```
+
+## Output
+
+The application predicts:
+
+* Early Blight
+* Late Blight
+* Healthy
+
+along with the prediction confidence score.
